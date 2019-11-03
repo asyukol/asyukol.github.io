@@ -45,73 +45,38 @@
         Рукокрылые выхухоли — бесполые животные, размножающиеся почкованием. Первые два года жизни эти необычные животные проводят в состоянии черенка, неспособного к самостоятельному перемещению и питающегося фильтрованием воздуха. В этот период им не требуется особого ухода, кроме прикрытия от солнечного света и обильного продувания воздушными потоками. По прошествии двух лет они отделяются от корня и являют собой полностью сформированную особь уменьшенных размеров. В этом возрасте животное все еще неспособно к размножению, но уже вполне способно дать отпор взрослому вооруженному человеку. По достижении полной зрелости (около трех лет) зверь набирает полный размер (до 65 кг) и начинает копить жир для дальнейшего почкования. Такая рукокрылая выхухоль — поистине грозный противник, приравниваемый по боевой мощи к двум танкам. Сложно придумать лучшего охранника, не правда ли?
     </div>
   </div>
-    <div class="row">
-    <div class="col-md-1"></div>
-    <div id="Price" class="ml-3 ml-md-0 col-md-8">
-      <h2>Калькулятор цены заказа</h2>
-      <label id="ageOfVyhuhol"> 
-        Возраст желаемого животного (может меняться в процессе доставки): 
-        <select id="age" name="age" onChange="Calc(this), Change(this)">
-          <option value="0" selected="selected">-</option>
-          <option value="3000" >1 год</option>
-          <option value="7500" >2 года</option>
-          <option value="12000" >3 года</option>
-        </select> <br/>
-      </label> 
-      <div id="tutorial" class="calcOptions">      
-        <label>
-          <input type="checkbox"  id="trainingTutorial"  value="1200"  onChange="Calc()" checked="checked">
-          Добавить к заказу пособие по боевой дрессировке (крайне рекомендуется)
-        </label>
-      </div>
-      <div id="offsprings" class="calcOptions">
-        Количество отпрысков:<br/>
-        <input type="radio" id="zero" name="offsprings" value="0" onChange="Calc()"> 0
-        <input type="radio" id="one" name="offsprings" value="3000" onChange="Calc()"> 1
-        <input type="radio" id="two" name="offsprings" value="6000" onChange="Calc()"> 2
-        <input type="radio" id="three" name="offsprings" value="9000" onChange="Calc()"> 3 
-      </div> <br/>
-      Количество:
-        <input id="numberOfVyhuhols" value="1" onChange="Calc()" placeholder="сколько выхухолей?">
-      <div>
-        <span id="calcFinal">Итого: <span id="calculated">0</span> шекелей<span id="takida" class="calcOptions"> А шо вы-таки хотели?</span></span>
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="col-md-1"></div>
     <div id="Order" class="ml-3 ml-md-0 col-md-8">
-      <h2>Доделаю потом/Сделать заказ</h2>
+      <h2>Сделать заказ</h2>
       <form action="file.txt" method="POST" >
-        <label>
-          Имя: <br/>
-          <input name="field-name" value="" placeholder="Иванов Иван Иванович">
-        </label> <br/>
-        <label>
-          Почта: <br/>
-          <input name="field-email" value="" placeholder="example@example.com">
-        </label> <br/>
-        <label>
-          Номер телефона: <br/>
-          <input name="field-number" value="" placeholder="1-234-567-89-00">
-        </label> <br/>
-        Возраст животного:<br/>
-        <label>
-           <input type="radio" value="default1" name="radio-group-1"/> 1 год
-        </label> <br/>
-        <label>
-          <input type="radio" value="default2" name="radio-group-1"/> 2 года 
-        </label> <br/>
-        <label>
-          <input type="radio" value="default3" name="radio-group-1"/> 3 года
-        </label> <br/>
-          Пол животного:<br/>
-        <label>
-           <input type="radio" value="default1" name="radio-group-2"/> Самец
-        </label>
-        <label>
-          <input type="radio" value="default2" name="radio-group-2"/> Самка 
-        </label> <br/>
+        <label id="ageOfVyhuhol"> 
+          Возраст желаемого животного (может меняться в процессе доставки): 
+          <select id="age" name="age" onChange="Calc(this), Change(this)">
+            <option value="0" selected="selected">-</option>
+            <option value="3000" >1 год</option>
+            <option value="7500" >2 года</option>
+            <option value="12000" >3 года</option>
+          </select> <br/>
+        </label> 
+        <div id="tutorial" class="calcOptions">      
+          <label>
+            <input type="checkbox"  id="trainingTutorial"  value="1200"  onChange="Calc()" checked="checked">
+            Добавить к заказу пособие по боевой дрессировке (крайне рекомендуется)
+          </label>
+        </div>
+        <div id="offsprings" class="calcOptions">
+          Количество отпрысков:<br/>
+          <input type="radio" id="zero" name="offsprings" value="0" onChange="Calc()"> 0
+          <input type="radio" id="one" name="offsprings" value="3000" onChange="Calc()"> 1
+          <input type="radio" id="two" name="offsprings" value="6000" onChange="Calc()"> 2
+          <input type="radio" id="three" name="offsprings" value="9000" onChange="Calc()"> 3 
+        </div> <br/>
+        Количество:
+        <input id="numberOfVyhuhols" value="1" onChange="Calc()" placeholder="сколько выхухолей?">
+        <div>
+          <span id="calcFinal">Итого: <span id="calculated">0</span> шекелей<span id="takida" class="calcOptions"> А шо вы-таки хотели?</span></span>
+        </div>
         <input type="submit" value="Отправить заказ">
       </form>
     </div>
