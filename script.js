@@ -35,8 +35,10 @@ function Calc()
   	if(two.checked==true) sum=parseInt(two.value);
   	if(three.checked==true) sum=parseInt(three.value);
   	sum=(sum+(+age))*num.value;
-  	document.getElementById("takida").style.display="block";
+  	document.getElementById("takida").style.display="none";
   }
+  if (sum>20000)
+  	document.getElementById("takida").style.display="block";
   final.innerHTML = sum;
 }
 function Change()
